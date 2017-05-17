@@ -1,9 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import {Router, browserHistory} from 'react-router'
+import Routes from './routes'
 
 ReactDOM.render(
-  <div>
-  	<h1>hello</h1>
-  </div>,
+  <Router history={browserHistory}>
+  	{Routes}
+  </Router>,
   document.getElementById('root')
 );
